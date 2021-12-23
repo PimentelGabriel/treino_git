@@ -1,3 +1,7 @@
+:root {
+    --diametroBtnSatelite: 8vw;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -19,6 +23,96 @@ p {
     text-align: justify;
 }
 
+#floatBtn {
+    --diametro: 10vw;
+    background-color: #a9a9a9;
+    display: inline-block;
+    align-self: center;
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.1em;
+    border-radius: 50%;
+    border: 0.5em solid rgb(255, 119, 119);
+    height: var(--diametro);
+    width: var(--diametro);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+#floatBtn:hover {
+    background-color: #a9a9a9aa;
+    border-color: #ff7777aa;
+    cursor: pointer;
+}
+
+#btnSatelite1 {
+    visibility: hidden;
+    display: inline-block;
+    position: fixed;
+    width: var(--diametroBtnSatelite);
+    height: var(--diametroBtnSatelite);
+    background-color: white;
+    border: 0.3em solid black;
+    border-radius: 50%;
+    bottom: 5.4em;
+    left: 1.5em;
+    bottom: 1.5em;
+    left: 1.5em;
+    transition: ease-in-out 1s;
+}
+
+#floatBtn:hover #btnSatelite1 {
+    visibility: visible;
+    bottom: 5.4em;
+    left: 1.5em;
+}
+
+#btnSatelite2 {
+    visibility: hidden;
+    display: inline-block;
+    position: fixed;
+    width: var(--diametroBtnSatelite);
+    height: var(--diametroBtnSatelite);
+    background-color: white;
+    border: 0.3em solid black;
+    border-radius: 50%;
+    bottom: 4em;
+    left: 5em;
+    bottom: 1.5em;
+    left: 1.5em;
+    transition: ease-in-out 1s;
+}
+
+#floatBtn:hover #btnSatelite2 {
+    visibility: visible;
+    bottom: 4em;
+    left: 5em;
+}
+
+#btnSatelite3 {
+    visibility: hidden;
+    display: inline-block;
+    position: fixed;
+    width: var(--diametroBtnSatelite);
+    height: var(--diametroBtnSatelite);
+    background-color: white;
+    border: 0.3em solid black;
+    border-radius: 50%;
+    bottom: 1.5em;
+    left: 1.5em;
+    transition: ease-in-out 1s;
+}
+
+#floatBtn:hover #btnSatelite3 {
+    visibility: visible;
+    bottom: 0.5em;
+    left: 6em;
+}
+
 .popup {
     --wd-popup: 40vw;
     position: fixed;
@@ -31,7 +125,6 @@ p {
     padding: 0 1em 1.9em;
     border: 1px solid gray;
     border-radius: 1em;
-    transition: ease-in-out 1s;
 }
 
 .popup>h3 {
