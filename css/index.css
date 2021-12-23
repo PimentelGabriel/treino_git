@@ -19,12 +19,12 @@ p {
     text-align: justify;
 }
 
-#popupForm {
-    --wd-popupForm: 40vw;
+.popup {
+    --wd-popup: 40vw;
     position: fixed;
-    width: val(--wd-popupForm);
+    width: val(--wd-popup);
     max-width: 70vw;
-    left: calc(50vw - (var(--wd-popupForm)/2));
+    left: calc(50vw - (var(--wd-popup)/2));
     top: 3em;
     height: fit-content;
     background-color: azure;
@@ -34,8 +34,28 @@ p {
     transition: ease-in-out 1s;
 }
 
-#popupForm>h3 {
+.popup>h3 {
     text-align: center;
+}
+
+.actionBar {
+    position: inherit;
+    width: auto;
+    width: 2em;
+    background-color: azure;
+}
+
+.actionBar>div {
+    position: relative;
+    top: 0.5em;
+    background-color: rgb(255, 81, 81);
+    border-radius: 50%;
+    width: 0.9em;
+    height: 0.9em;
+}
+
+.actionBar>div:hover {
+    background-color: rgb(255, 160, 160);
 }
 
 .actionBar {
