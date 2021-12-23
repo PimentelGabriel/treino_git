@@ -61,7 +61,7 @@ p {
     border-radius: 50%;
     bottom: 3em;
     left: 3em;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 300ms;
 }
 
 #floabtns,
@@ -83,7 +83,7 @@ p {
     border-radius: 50%;
     bottom: 3em;
     left: 3em;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 500ms;
 }
 
 #floabtns,
@@ -105,7 +105,7 @@ p {
     border-radius: 50%;
     bottom: 3em;
     left: 3em;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 700ms;
 }
 
 #floabtns,
